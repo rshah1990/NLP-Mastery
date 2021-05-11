@@ -8,6 +8,10 @@
 | I am rohit shah & machine learning developer | 1  | (rohit,shah);(rohit,am) |
 
 - Problems With CBoW/Skip-gram :  the calculation of the final probabilities using the softmax is quite an expensive operation & only the weights corresponding to the target word might get a significant update
+- To improve performance 
+  - Hierarchical softmax
+  - Negative sampling 
+  - async SGD (Parameter server stratergy)
 - Negative Sampling: Negative sampling allows us to only modify a small percentage of the weights, rather than all of them for each training sample
 - Sub Sampling: In sub-sampling, we limit the number of samples for a word by capping their frequency of occurrence. For frequently occurring words, we remove a few of their instances both as a neighboring word and as the input word.
 
@@ -29,3 +33,7 @@
 - It can take care of spelling mistakes as well
 
 # Poincare Embeddings
+
+- word2vec models cant handle Hierarchical representation 
+- Poincaré Embeddings learn hierarchical representations of symbolic data by embedding them into hyperbolic space 
+- Gensim has implementation for this [https://radimrehurek.com/gensim/models/poincare.html]
