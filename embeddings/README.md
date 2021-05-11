@@ -22,4 +22,10 @@
 
 # FastText
 
+- Logic is very similar to word2vec model
+- word -> subword info -> n-gram -> embedding for n-gram
+- word embedding is avarage of n-gram embeddings 
+- The main advantage of FastText embeddings over Word2Vec is to take into account the internal structure of words while learning word representations, which could be very useful for morphologically rich languages, and also for words that occur rarely
+- It can take care of spelling mistakes as well
+
 # Poincare Embeddings
